@@ -2,178 +2,253 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Pretendard&display=swap" rel="stylesheet" />
-    <title>Python</title>
+    <title>PYTHON</title>
     <style>
-    .logo .logo_img {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      left: 80px;
-      top: 12px;
-    }
-    .logo .logo_text {
-      position: absolute;
-      width: 126px;
-      height: 36px;
-      left: 138px;
-      top: 19px;
-
-      font-family: 'Pretendard';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 36px;
-      /* identical to box height */
-
-      display: flex;
-      align-items: center;
-
-      /* Black */
-
-      color: #000000;
-    }
-    .title {
-      position: absolute;
-      width: 281px;
-      height: 80px;
-      left: 80px;
-      top: 318px;
-
-      font-family: 'Pretendard';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 67px;
-      line-height: 80px;
-
-      /* Black */
-
-      color: #000000;
-    }
-    .explain {
-      position: absolute;
-      width: 557px;
-      height: 152px;
-      left: 80px;
-      top: 438px;
-
-      font-family: 'Pretendard';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 160%;
-      /* or 38px */
-
-      letter-spacing: -0.003em;
-
-      color: rgba(44, 44, 44, 0.8);
-    }
-    .btn {
-      position: absolute;
-      width: 181px;
-      height: 53px;
-      left: 80px;
-      top: 627px;
-    }
-    .btn .box {
-      box-sizing: border-box;
-
-      position: absolute;
-      left: 0%;
-      right: 0%;
-      top: 0%;
-      bottom: 0%;
-
-      background: #FFFFFF;
-      /* Black */
-
-      border: 1px solid #000000;
-      border-radius: 8px;
-    }
-    .btn .text {
-      position: absolute;
-      left: 30.94%;
-      right: 30.39%;
-      top: 28.3%;
-      bottom: 30.19%;
-
-      font-family: 'Pretendard';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
-      /* identical to box height */
-
-      display: flex;
-      align-items: center;
-      letter-spacing: -0.006em;
-
-      /* Black */
-
-      color: #000000;
-
-      opacity: 0.6;
-    }
-    .signin .guide {
-      position: absolute;
-      width: 117px;
-      height: 12px;
-      left: 86px;
-      top: 686px;
-
-      font-family: 'Pretendard';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 12px;
-      /* identical to box height */
-
-      display: flex;
-      align-items: center;
-
-      color: #717171;
-    }
-    .signin .signin_link {
-      position: absolute;
-      width: 46px;
-      height: 12px;
-      left: 209px;
-      top: 686px;
-
-      font-family: 'Pretendard';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 12px;
-      /* identical to box height */
-
-      display: flex;
-      align-items: center;
-
-      /* Black */
-
-      color: #000000;
-    }
+      header {
+        align-items: center;
+      }
+      .container {
+        position: relative;
+        width: 1400px;
+        margin: 0 auto;
+      }
+      header .logo-img {
+        position: relative;
+        top:8px;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+      }
+      header .logo-text {
+        position: absolute;
+        top: 15px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        color: black;
+      }
+      header .link-list {
+        position: relative;
+        float: right;
+        margin-right: 8px;
+        top: 20px;
+      }
+      .link-list .line{
+        width: 28px;
+        height: 0px;
+        border-left: 1px solid #D1D1D1;
+        transform: rotate(90deg);
+        margin-left: 35px;
+      }
+      .link-list .link {
+        text-decoration: none;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin-left: 35px;
+      }
+      .link-list .signin-link{
+        text-decoration: none;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #717171;
+        margin-left: 35px;
+      }
+      section{
+        padding-top: 100px;
+      }
+      .explain{
+        position: absolute;
+        top: 110px;
+        margin-left: 8px;
+      }
+      .explain .e-title {
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 67px;
+        line-height: 80px;
+        color: #000000;
+      }
+      .explain .e-text{
+        position: relative;
+        top: 40px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 160%;
+        letter-spacing: -0.003em;
+        color: rgba(44, 44, 44, 0.8);
+      }
+      .explain .btn-rect{
+        text-decoration: none;
+        position: relative;
+        top:90px;
+        display: block;
+        width: 240px;
+        height: 54px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1.5px solid #000000;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .btn-rect .btn-text{
+        position: relative;
+        top: 15px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.006em;
+        color: #000000;
+        opacity: 0.6;
+      }
+      .explain .litter{
+        position: relative;
+        top: 83px;
+        left: 44px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        align-items: center;
+        color: #717171;
+      }
+      .explain .litter2{
+        position: relative;
+        top: 83px;
+        left: 40px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+        color: #000000;
+      }
+      .container .bigbtns{
+        position: relative;
+        float: right;
+        margin-right: 8px;
+        display: grid;
+        grid-column: 50px;
+        grid-row: 50px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-gap: 50px;
+        width: 650px;
+        height: 650px;
+      }
+      .bigbtns [class^="bigbtn-frame-"]{
+        text-decoration: none;
+        position: relative;
+        display: block;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.13);
+        border-radius: 30px;
+      }
+      .bigbtn-text{
+        position: relative;
+        top: 33px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        color: #000000;
+      }
+      [class^="bigbtn-img-"]{
+        position: relative;
+        display: block;
+        bottom: -75px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .bigbtn-img-lecture{
+        width: 130px;
+        height: 130px;
+      }
+      .bigbtn-img-contents{
+        width: 122.35px;
+        height: 122.35px;
+      }
+      .bigbtn-img-chat{
+        width: 122.35px;
+        height: 122.35px;
+      }
+      .bigbtn-img-python{
+        width: 112.16px;
+        height: 121.91px;
+      }
     </style>
   </head>
   <body>
-    <a class="logo" href="/">
-      <img class="logo_img" src="python_icon.png">
-      <span class="logo_text">PYTHON</span>
-    </a>
-    <span class="title">PYTHON</span>
-    <span class="explain">Welcome to PYTHON web.
-This web is for learning  Python.
-If you want to learn about Python, It’s a good choice.
-Let’s Learn about Python.</span>
-    <span class="signin">
-      <a class="btn" href="/signin">
-        <span class="box">
-          <span class="text">SIGN UP</span>
+    <header>
+      <div class="container">
+        <a href={main_page}>
+          <img src="assets\python_logo.png" class="logo-img">
+          <span class="logo-text">PYTHON</span>
+        </a>
+        <span class="link-list">
+          <a href="" class="link">CONTENTS</a>
+          <span class="line"></span>
+          <a href="" class="link">LECTURE</a>
+          <span class="line"></span>
+          <a href="" class="link">OPEN CHAT</a>
+          <span class="line"></span>
+          <a href="" class="signin-link">SIGN IN →</a>
         </span>
-      </a>
-      <span class="guide">Already have an account?</span>
-      <a class="signin_link" href="/signin"> Sign in →</a>
-    </span>
+      </div>
+    </header>
+
+
+    <section>
+      <div class="container">
+        <div class="explain">
+          <div class="e-title">PYTHON</div>
+          <div class="e-text">Welcome to PYTHON web.<br>
+          This web is for learning  Python.<br>
+          If you want to learn about Python, It’s a good choice.<br>
+          Let’s Learn about Python.</div>
+          <a href="" class="btn-rect"><span class="btn-text">SIGN UP</span></a>
+          <span class="litter">Already have an account?</span>
+          <a href="" class="litter2">Sign in →</a>
+        </div>
+
+        <div class="bigbtns">
+          <a href="" class="bigbtn-frame-lecture">
+            <span class="bigbtn-text">LECTURE</span>
+            <img src="assets\icon-lecture.png" class="bigbtn-img-lecture">
+          </a>
+          <a href="" class="bigbtn-frame-contents">
+            <span class="bigbtn-text">CONTENTS</span>
+            <img src="assets\icon-contents.png" class="bigbtn-img-contents">
+          </a>
+          <a href="" class="bigbtn-frame-chat">
+            <span class="bigbtn-text">OPEN CHAT</span>
+            <img src="assets\icon-chat.png" class="bigbtn-img-chat">
+          </a>
+          <a href="" class="bigbtn-frame-python">
+            <span class="bigbtn-text">PYTHON</span>
+            <img src="assets\icon-python.png" class="bigbtn-img-python">
+          </a>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
