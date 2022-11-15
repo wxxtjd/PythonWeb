@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Pretendard&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="signup.js"></script>
+    <title>SING UP</title>
+    <style>
+      body {
+        background: #F7F7F7;
+      }
+      .container {
+        /*POSITION*/
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80px;
+        align-items: center;
+        text-align: center;
+        /*DESIGN*/
+        width: 486px;
+        height: 812px;
+        background: #FFFFFF;
+        border: 1px solid #D2D2D2;
+        border-radius: 16px;
+      }
+      .img-logo {
+        /*POSITION*/
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top:66px;
+        /*DESIGN*/
+        width: 50px;
+        height: 50px;
+      }
+      .text-logo {
+        /*POSITION*/
+        position: relative;
+        top: calc(50px + 32px);
+        /*DESIGN*/
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 32px;
+        letter-spacing: -0.05em;
+        color: #000000;
+        text-decoration: none;
+      }
+      .text-signup {
+        /*POSITION*/
+        position: relative;
+        top: calc(82px + 5px);
+        /*DESIGN*/
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        color: #848484;
+      }
+      [class^="text-guide-"] {
+        position: absolute;
+        left: 68px;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #424242;
+      }
+      .text-guide-email {
+        /*POSITION*/
+        top:227px;
+      }
+      .text-guide-name {
+        /*POSITION*/
+        top:calc(227px + 91px);
+      }
+      .text-guide-pw {
+        /*POSITION*/
+        top:calc(227px + 91px*2);
+      }
+      .text-guide-pwcheck {
+        /*POSITION*/
+        top:calc(227px + 91px*3);
+      }
+      [class^="info-signup-"] {
+        /*POSITION*/
+        position: relative;
+        /*DESIGN*/
+        box-sizing: border-box;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 350px;
+        height: 48px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        padding-left: 10px;
+      }
+      .info-signup-email {
+        /*POSITION*/
+        top: calc(57px + 90px);
+      }
+      .info-signup-name {
+        /*POSITION*/
+        top: calc(57px + 90px + 43px);
+      }
+      .info-signup-pw {
+        /*POSITION*/
+        top: calc(57px + 90px + 43px * 2);
+      }
+      .info-signup-pwcheck {
+        /*POSITION*/
+        top: calc(57px + 90px + 43px * 3);
+      }
+      .signup-submit {
+        /*POSITION*/
+        position: relative;
+        top: calc(57px + 90px + 43px*3 + 113px);
+        /*DESIGN*/
+        width: 350px;
+        height: 50px;
+        background: #E6E6E6;
+        border-radius: 8px;
+        border: 0px;
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #818181;
+
+        /* cursor: pointer; */
+      }
+      .frame {
+        /*POSITION*/
+
+        /*DESIGN*/
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <a href=""><img src="assets/python_logo.png" class="img-logo"></a>
+        <a href="" class="text-logo">PYTHON</a>
+        <div class="text-signup">회원가입</div>
+        <form name="input" method="post" action="/signup" autocomplete='off'>
+          <div class="text-guide-email">이메일</div>
+          <input type="text" name="useremail" placeholder="이메일을 입력해주세요" class="info-signup-email">
+          <div class="text-guide-name">닉네임</div>
+          <input type="text" name="username" placeholder="닉네임을 입력해주세요" class="info-signup-name">
+          <div class="text-guide-pw">비밀번호</div>
+          <input type="password" name="userpw" placeholder="비밀번호를  입력해주세요" class="info-signup-pw">
+          <div class="text-guide-pwcheck">비밀번호 재확인</div>
+          <input type="password" name="userpwcheck" placeholder="비밀번호를  입력해주세요" class="info-signup-pwcheck">
+          <input type="button" name="signup-submit" value="로그인" class="signup-submit" onclick="checkpw()" disabled=true>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
